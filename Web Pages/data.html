@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Final Project</title>
+
+    <!-- Bring in bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body> 
+   
+     <!-- Navigation Bar --> 
+
+     <nav>
+        <ul>
+          <li>
+            <a href="index.html">Overview</a>
+          </li>
+          <li>
+            <a href="data.html">Data</a>         
+          </li>
+          <li>
+            <a href="tools.html">Tools</a>          
+          </li>
+          <li>
+            <a href="model.html">Model</a>          
+          </li>
+          <li>
+            <a href="references.html">References</a>          
+          </li>
+        </ul>
+      </nav>
+
+   
+<!-- define the container to hold the temperature plot with description and the visualisations plots -->
+<!-- this first section creates the example plot and the description -->   
+
+  <div class="container1">
+    <section class="row">
+      <div class="col-lg-7 col-md-12">
+          <div class="content">
+            <h1 class="plot-header">Data</h1>
+            <hr>
+            <img src="https://github.com/ramkraut/final_project/blob/main/Images/Bouys%20-%20dark%20background%20resized%20V1.png?raw=true" alt="Bouys - Dark Map" id="darkimage">
+            <img src="https://github.com/ramkraut/final_project/blob/main/Images/Bouys%20-%20white%20background%20resized.png?raw=true" alt="Bouys - Light Map" id="lightimage">
+
+            <p>
+              <b><u>Bouy Data</b></u><br>The data for each bouy was pulled from the National Data Bouy Center during the time period of January 2005 through December 2019.
+              We compiled data during this timeframe for ten specific bouys in the Gulf of Mexico region <b>(bouy locations pictured above)</b>.
+              In reviewing the buoy data and important factors of a hurricane, atmospheric pressure (PRES hPa) and water temperature (WTMP degC)* have been deemed 
+              the two data points that will be utilized in the Machine Learning predictive model for storm predicting. 
+
+          
+            
+            </p>
+            
+          </div>
+        </div>
+      
+<!-- this section creates the Limitations section on the top right --> 
+
+      <div class="col-lg-5 col-md-12">
+        <div class="limitations-content">
+          <h2 class="plot-header">Limitations</h2>
+          <hr>
+            <div class="unorderedlist">  
+                <ul>
+                    <li>In 2005, a couple bouys were knocked out of commission during hurricane Katrina. Because of this, there is no data for a those couple of bouys from late August to mid October in 2005.</li>
+                    <li>There were hurricanes dating back as early as 1851 we could have utilized, but the bouy data did not go back that far.</li>
+                    <li>We used a static number for each hurricane category, which means we did not encompass the category changes of the hurricane throughout its lifecycle.</li>
+                    <li>Not all bouys we used may have been close to or in the path of each hurricane. The data from these bouys would most likely be less useful and cause our model to learn inaccurately how to predict storms.</li>
+                    <li>We understand there are other data sources out there that help predict hurricanes and tropical storms, however we wanted to focus solely on the bouy data for this project.</li>
+
+                </ul>
+            </div>
+        
+        </div>
+      </div>
+  </div>  
+
+
+  <!-- this section creates the "if we had more time" section on the bottom right --> 
+
+  <div class="stack-below">
+    <div class="moretime-content">
+      <h2 class="plot-header">If we had more time...</h2>
+      <hr>
+      <div class="unorderedlist">  
+        <ul>
+            <li>We could have used more bouy data not only from more bouys in the Gulf of Mexico, but a larger area in the Atlantic.</li>
+            <li>We would have loved to look into Neural Networks a bit more, how it could have been used with our data, or what we would have needed in order to make it happen.</li>
+            <li>We could have analyzed the paths of the hurricanes and storms in order to best select bouys to choose data from</li>
+            <li>We could have looked into removing the data that potentially inteferred with our machine learning process (as mentioned in Limitations section).</li>
+        </ul>
+    </div>
+       
+    </div>
+    
+    </div>
+  </div>
+</div>  
+
+
+<!-- Data Abbreviations table -->
+<div class="container">
+    <div class="row">
+      <div class="table-content">
+        <div class = "col-12"> 
+        
+         
+            <h1 class="plot-header">Data Abbreviations and Definitions</h1>
+            <hr>
+            <p>The following table includes all of the data labels, abbreviations used in our bouy data for this project.</p>
+            <br>    
+
+            <table class="table">
+                <thead class="tablehead">
+                    <tr>
+                        <th>Abbreviation</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>WDIR</td>
+                        <td>Wind direction (the direction the wind is coming from in degrees clockwise from true N) during the same period used for WSPD. See Wind Averaging Methods</td>
+                    </tr>
+                    <tr>
+                        <td>WSPD</td>
+                        <td>Wind speed (m/s) averaged over an eight-minute period for buoys and a two-minute period for land stations. Reported Hourly. See Wind Averaging Methods.</td>
+                    </tr>
+                    <tr>
+                        <td>GST</td>
+                        <td>Peak 5 or 8 second gust speed (m/s) measured during the eight-minute or two-minute period. The 5 or 8 second period can be determined by payload, See the Sensor Reporting, Sampling, and Accuracy section.</td>
+                    </tr>
+                    <tr>
+                        <td>WVHT</td>
+                        <td>Significant wave height (meters) is calculated as the average of the highest one-third of all of the wave heights during the 20-minute sampling period. See the Wave Measurements section.</td>
+                    </tr>
+                    <tr>
+                        <td>DPD</td>
+                        <td>Dominant wave period (seconds) is the period with the maximum wave energy. See the Wave Measurements section.</td>
+                    </tr>
+                    <tr>
+                        <td>APD</td>
+                        <td>Average wave period (seconds) of all waves during the 20-minute period. See the Wave Measurements section.</td>
+                    </tr>
+                    <tr>
+                        <td>MWD</td>
+                        <td>The direction from which the waves at the dominant period (DPD) are coming. The units are degrees from true North, increasing clockwise, with North as 0 (zero) degrees and East as 90 degrees. See the Wave Measurements section.</td>
+                    </tr>
+                    <tr>
+                        <td>PRES</td>
+                        <td>Sea level pressure (hPa). For C-MAN sites and Great Lakes buoys, the recorded pressure is reduced to sea level using the method described in NWS Technical Procedures Bulletin 291 (11/14/80). (labeled BAR in Historical files)</td>
+                    </tr>
+                    <tr>
+                        <td>ATMP</td>
+                        <td>Air temperature (Celsius). For sensor heights on buoys, see Hull Descriptions. For sensor heights at C-MAN stations, see C-MAN Sensor Locations</td>
+                    </tr>
+                    <tr>
+                        <td>WTMP</td>
+                        <td>Sea surface temperature (Celsius). For buoys the depth is referenced to the hull's waterline. For fixed platforms it varies with tide, but is referenced to, or near Mean Lower Low Water (MLLW).</td>
+                    </tr>
+                    <tr>
+                        <td>DEWP</td>
+                        <td>Dewpoint temperature taken at the same height as the air temperature measurement.</td>
+                    </tr>
+                    <tr>
+                        <td>VIS</td>
+                        <td>Station visibility (nautical miles). Note that buoy stations are limited to reports from 0 to 1.6 nmi.</td>
+                    </tr>
+                    <tr>
+                        <td>PTDY</td>
+                        <td>Pressure Tendency is the direction (plus or minus) and the amount of pressure change (hPa)for a three hour period ending at the time of observation. (not in Historical files)</td>
+                    </tr>
+                    <tr>
+                        <td>TIDE</td>
+                        <td>The water level in feet above or below Mean Lower Low Water (MLLW).</td>
+                    </tr>
+                </tbody>   
+            </table>
+
+
+  </body>
+    
+
+</html>
