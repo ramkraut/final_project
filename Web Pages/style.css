@@ -1,76 +1,23 @@
 body{
-  background-color: #5A88B8;
-  margin: 0;
-}
-
-li {
-    list-style-type: none;
-    margin: 0 2vw;
-    font-size: 3vh;
-}
-
-a {
-    text-decoration: none;
-    color: #D7E0F1;
-    padding: .5vw;
-    font-family: Georgia, Times, "Times New Roman", serif;
-}
-
-a:hover {
-    background-color: #2E4269;
-}
-
-nav {
-    width: 100vw;
-    background-color: #405580;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
+  background-color: lightgray;
 }
 
 .plot-content {
 	margin-top: 30px;
-    margin-bottom: 60px;
-    margin-right: -50%;
-    margin-left: 30%;
-	padding: 10px 30px 5px;
-	color: #2E4269;
-	background-color: #D7E0F1;
-}
-
-.content {
-	margin-top: 30px;
 	margin-bottom: 60px;
 	padding: 10px 30px 5px;
-	color:#2E4269;
-	background-color: #D7E0F1;
+	color: black;
+	background-color: white;
 }
 
 
- .limitations-content {
+
+.visplot-content {
 	margin-top: 30px;
 	margin-bottom: 60px;
-	margin-right: 10%;
 	padding: 10px 30px 40px;
-	color: #2E4269;
-	background-color: #D7E0F1;
-} 
-
-.moretime-content {
-	margin-top: 50px;
-	margin-bottom: 50px;
-	margin-right: 3%;
-	margin-left: 62.5%;
-	padding: 10px 30px 40px;
-	color: #2E4269;
-	background-color: #D7E0F1;
-}
-
-.container1 {
-	margin-left: 5%;
+	color: black;
+	background-color: white;
 }
 
 .compplot-content {
@@ -85,22 +32,16 @@ ul {
 .plot-header {
 	padding-top: 15px; 
 	padding-left: 4px;
-	color: #2E4269;
+	color: rgb(40, 164, 180);
 	font-size: 26px;
 	font-weight: bold;
 	font-family: Georgia, Times, "Times New Roman", serif;
 }
 
-.names {
-	padding-left: 4px;
-	color: #A0A5AF;
-	font-size: 18px;
-	font-family: Georgia, Times, "Times New Roman", serif;
-}
   
 #landing-image {
-    text-align: rcenterelative;
-    width: 100%;
+    float: left;
+    width: 50%;
     height: 50%;
   }
 
@@ -108,16 +49,6 @@ ul {
     width: 100%;
     height: 100%;
   }
-
-  #darkimage {
-	  float: left;
-	  width: 50%;
-  }
-
-  #lightimage {
-	float: right;
-	width: 50%;
-}
 
 #vis-image {
 	float: left;
@@ -130,8 +61,8 @@ ul {
 	width: 90%;
 	height: 90%;
 }
-.table{
-	text-align: left;
+.table1{
+	text-align: center;
 }
 
 
