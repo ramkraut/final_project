@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Final Project</title>
+
+    <!-- Bring in bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+       <!-- Navigation Bar --> 
+
+  <div class="topnav">
+    <a href="../index.html">Overview</a>
+    <a href="data.html">Data</a>
+    <a href="tools.html">Tools</a>
+    <a href="model.html">Model</a>
+    <a href="references.html">References</a>
+  </div>
+
+<!-- define the container to hold the temperature plot with description and the visualisations plots -->
+<!-- this first section creates the example plot and the description -->   
+
+<div class="container1">
+  <section class="row">
+    <div class="col-lg-7 col-md-12">
+        <div class="content">
+          <h1 class="plot-header">Machine Learning Model</h1>
+          <hr>
+          <img src="https://github.com/ramkraut/final_project/blob/main/Images/just_storms_1_resized.png?raw=true" alt="Just Storms Model 1" id="codeimage">
+
+          <p>
+            Water temperature must be greater than 26 degress Celsius for hurricanes to form. Wind speed determines a storm's category.
+            Wave height relates to the storm's category.
+            Talk about random forest here
+          </p>
+          
+        </div>
+      </div>
+    
+<!-- this section creates the Limitations section on the top right --> 
+
+<div class="col-lg-5 col-md-12">
+  <div class="content">
+    <h2 class="plot-header">Limitations</h2>
+    <hr>
+      <div class="list-group">  
+          <ul>
+              <li>Our complete dataset has the better predictive score, however, we found it is actually not predicting storms on days with conditions where we know there are storms.</li>
+              <li>We found just the storm data (the smaller dataset) had a lower predictive score, but predicted storms more accurately.</li>
+              <li>We had a lot of data from the buoys, but there have not been enough storms in the last 15 years to account for all of the buoy data we had.</li>
+
+          </ul>
+      </div>
+  
+  </div>
+</div>
+
+<!-- this section creates the If we had more time section on the top right -->
+<div class="stack-below">
+  <div class="moretime-content">
+    <h2 class="plot-header">If we had more time...</h2>
+    <hr>
+    <div class="unorderedlist">  
+      <ul>
+          <li>something</li>
+          <li>something</li>
+          <li>something</li>
+      </ul>
+  </div>
+     
+  </div>
+  
+  </div>
+</div>
+</div>  
+        
+
+  </body>
+    
+
+</html>
