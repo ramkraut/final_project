@@ -45,12 +45,15 @@
             <p>
               <b><u>Buoy Data</b></u><br>The data for each buoy was pulled from the National Data Buoy Center during the time period of January 2005 through December 2019.
               We compiled data during this timeframe for ten specific buoys in the Gulf of Mexico region <b>(Buoy locations pictured above)</b>.
-              Buoy data is collected via satellite and sent to the National Data Buoy Center which collects, analyzes and sends out the data.
-              In reviewing the buoy data and important factors of a hurricane, we selected wind speed, water temperature, and wave height  
-              to utilize in the Machine Learning predictive model. Water temperature must be greater than 26 degress Celsius for hurricanes to form. Wind speed determines strom category
+              Buoy data is collected via satellite and sent to the National Data Buoy Center which collects, analyzes and sends out the data. We had to pull data for each buoy separately, which then
+              made it necessary to do a lot of data cleanup and joining in order to get all the data in the same format and same document <b>(Sample buoy data pictured above)</b>.. Once this was put together, we were able to determine dates for the data from each
+              buoy when there was a storm versus no storm using the hurricane and tropical storm data explained below.
             </p>
 
             <p> <b><u>Hurricane and Tropical Storm Data</b></u><br>
+              The data we found for hurricanes and tropical storms was pulled from the Hurricane Research Division - Atlantic Oceanographic & Meteorological Laboratory. We were able to pull hurricane and tropical storm data
+              from the Atlantic for the last 15 years from this site. This data provided storm category, some conditions, affected states, date of the storm, and the name of the storm. We had to combine this data with our buoy data in order to match up the buoy data with
+              each day there was a storm and also to know which days did not have storms. 
             
             </p>
             
@@ -75,29 +78,21 @@
             </div>
         
         </div>
+        <div class="stack-below">
+          <div class="moretime-content">
+            <h2 class="plot-header">If we had more time...</h2>
+            <hr>
+            <div class="list-group">  
+              <ul>
+                  <li>We could have used more buoy data not only from more buoys in the Gulf of Mexico, but a larger area in the Atlantic.</li>
+                  <li>We would have loved to look into Neural Networks a bit more, how it could have been used with our data, or what we would have needed in order to make it happen.</li>
+                  <li>We could have analyzed the paths of the hurricanes and storms in order to best select buoys to choose data from</li>
+                  <li>We could have looked into removing the data that potentially inteferred with our machine learning process (as mentioned in Limitations section).</li>
+              </ul>
+          </div>
+             
+        </div>
       </div>
-
-
-  <!-- this section creates the "if we had more time" section on the bottom right --> 
-
-  <div class="col-lg-5 col-md-12">
-    <div class="content">
-      <h2 class="plot-header">If we had more time...</h2>
-      <hr>
-      <div class="list-group">  
-        <ul>
-            <li>We could have used more buoy data not only from more buoys in the Gulf of Mexico, but a larger area in the Atlantic.</li>
-            <li>We would have loved to look into Neural Networks a bit more, how it could have been used with our data, or what we would have needed in order to make it happen.</li>
-            <li>We could have analyzed the paths of the hurricanes and storms in order to best select buoys to choose data from</li>
-            <li>We could have looked into removing the data that potentially inteferred with our machine learning process (as mentioned in Limitations section).</li>
-        </ul>
-    </div>
-       
-    </div>
-    
-    </div>
-  </div>
-</div>  
 
 
 <!-- Data Abbreviations table -->

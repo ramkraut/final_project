@@ -38,14 +38,26 @@
         <div class="content">
           <h1 class="plot-header">Machine Learning Model</h1>
           <hr>
-          <img src="https://github.com/ramkraut/final_project/blob/main/Images/just_storms_1_resized.png?raw=true" alt="Just Storms Model 1" id="codeimage">
-
-          <p>
-            Water temperature must be greater than 26 degress Celsius for hurricanes to form. Wind speed determines a storm's category.
-            Wave height relates to the storm's category.
-            Talk about random forest here
+          <p>For our model we used classification trees, both decision trees and random forests. Classification trees are essentially a series of questions designed to assign a classification.
+            In our case, our classification trees are a series of data points, including our most important variables; water temperature, wind speed and wave height.
+            With this data, our model is trying to answer the question, "Are these the conditions for a storm? If yes, what category storm?"
+            <br><br>We first looked at a dataset that only had the buoy data from days there were storms, along with the data from that particular storm or hurricane.
+            First looking at a decision tree, we were able to see that the model was only 48% accurate at predicting storms. Next, we ran the random forest and found that was only
+            able to predict with 52% accuracy. We then tested the model to find out if it really could predict storms during a previous month where we already knew all the storms that occured.
+            We found that this model was the most accurate at predicting storms when doing this.
+            
+            <br><br>Next, we looked at our full dataset that included the buoy data from days with storms, but also all of the buoy data from days without storms. Looking at the decision tree in this model,
+            we were able to see a much better predictive score from our model, 91%. The random forest had an even better ability to predict storms at 93%. However, when we tested this model with a previous month of data, 
+            we saw that it was actually less accurate at predicting storms, despite the higher predcitve score.
+            <br><br>Below is some of our code that we used to build the decision tree and random forest models. 
           </p>
-          
+          <p><b>Code using just the Storm Data</b></p>
+          <img src="https://github.com/ramkraut/ramkraut.github.io/blob/main/Images/just_storms_1.png?raw=true" alt="Just Storms Model 1" id="codeimage">
+          <p><br></p><img src="https://github.com/ramkraut/ramkraut.github.io/blob/main/Images/just_storms-2.png?raw=true" alt="Just Storms Model 2" id="codeimage">
+          <p><br></p><img src="https://github.com/ramkraut/ramkraut.github.io/blob/main/Images/just_storms-3.png?raw=true" alt="Just Storms Model 3" id="codeimage">
+          <p><br><b>Code using all data - days with storms and without</b></p>
+          <img src="https://github.com/ramkraut/ramkraut.github.io/blob/main/Images/all_data1.png?raw=true" alt="All Data Model 1" id="codeimage">
+          <p><br></p><img src="https://github.com/ramkraut/ramkraut.github.io/blob/main/Images/all-data-2.png?raw=true" alt="All Data Model 2" id="codeimage">
         </div>
       </div>
     
@@ -65,26 +77,18 @@
       </div>
   
   </div>
-</div>
 
-<!-- this section creates the If we had more time section on the top right -->
-<div class="stack-below">
-  <div class="moretime-content">
-    <h2 class="plot-header">If we had more time...</h2>
-    <hr>
-    <div class="unorderedlist">  
-      <ul>
-          <li>something</li>
-          <li>something</li>
-          <li>something</li>
-      </ul>
-  </div>
-     
-  </div>
-  
-  </div>
+  <div class="stack-below">
+    <div class="moretime-content">
+      <h2 class="plot-header">If we had more time...</h2>
+      <hr>
+      <div class="list-group">  
+        <ul>
+            <li>We would dig further into why the model worked less accurately with more data.</li>
+            <li>We would potentially remove some of the non-storm data points to lessen the difference between non-storm days and storm days in a year.</li>
+        </ul>
+    </div>
 </div>
-</div>  
         
 
   </body>

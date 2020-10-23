@@ -74,9 +74,6 @@ a:hover {
 	background-color: #D7E0F1;
 }
 
-.container1 {
-	margin-left: 5%;
-}
 
 .compplot-content {
 	margin-top: 30px;
@@ -131,8 +128,8 @@ a:hover {
 	width: 50%;
 }
 
-#codeimage.resize {
-	width: 540px;
+#codeimage {
+	max-width: 100%;
 	height: auto;
 }
 
@@ -160,8 +157,8 @@ a:hover {
 	margin: 30px 10px 10px 10px;
 	border: 10px 10px 10px 10px;
 	padding: 10px 10px 10px 10px;
-	color: black;
-	background-color: white;
+	color: #2E4269;
+	background-color: #D7E0F1;
 }
 
 .comp-title {
